@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "mocha": "^10.2.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "eslint": "./node_modules/.bin/eslint ./public/another-module.js ./public/my-module.js"
+  }
+}
