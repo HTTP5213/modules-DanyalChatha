@@ -1,19 +1,9 @@
-import { theShire, buckland} from "./another-module";
+import { theShire, buckland} from "./another-module.js";
+
+const statement = () => `${theShire.name} was founded ${buckland.founding - theShire.founding} years before ${buckland.name}.`;
 
 export {theShire, statement};
 
-import { expect } from 'chai';
-
-describe('buckland', function() {
-	it('should be Hobbit Settlement', () => {
-		expect(buckland()).to.be.an.instanceof(HobbitSettlement);
-	});
-});
 
 
-describe('statement', function() {
-	it('Should return the correct string', () => {
-		expect(statement()).to.equal('The Shire was founded 739 years before Buckland.');
-	});
-});
 
